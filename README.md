@@ -15,5 +15,9 @@ https://rehangrero.github.io/south-coast/ahangama_inland_investment.html
 
 https://rehangrero.github.io/south-coast/hela_dashboard.html
 
+# alt
+https://rehangrero.github.io/south-coast/alternative_investments.html
+
+
 
 SouthC
