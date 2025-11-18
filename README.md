@@ -11,4 +11,9 @@ https://rehangrero.github.io/south-coast/Lagoon_Hotel_Investment_V1.html
 # Ahangama-south
 https://rehangrero.github.io/south-coast/ahangama_inland_investment.html
 
+# HelaYes
+
+https://rehangrero.github.io/south-coast/hela_dashboard.html
+
+
 SouthC
