@@ -8,5 +8,7 @@ https://rehangrero.github.io/south-coast/unawatuna-villa-investment.html
 https://rehangrero.github.io/south-coast/Negombo_Lagoon_Hotel_Investment_Presentation.html
 https://rehangrero.github.io/south-coast/Lagoon_Hotel_Investment_V1.html
 
-# south-coast
+# Ahangama-south
+https://rehangrero.github.io/south-coast/ahangama_inland_investment.html
+
 SouthC
