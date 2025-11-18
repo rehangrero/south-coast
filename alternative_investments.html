@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternative Investment Opportunities - Sri Lankan Properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        .properties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .property-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .property-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .property-type {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .for-sale {
+            background: #10b981;
+            color: white;
+        }
+        
+        .for-rent {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        .property-title {
+            font-size: 1.5rem;
+            color: #1e293b;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .location {
+            color: #64748b;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .location::before {
+            content: "📍";
+        }
+        
+        .price {
+            font-size: 1.75rem;
+            color: #7c3aed;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .price-note {
+            font-size: 0.9rem;
+            color: #64748b;
+            font-weight: normal;
+        }
+        
+        .property-details {
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }
+        
+        .detail-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 12px;
+            color: #475569;
+            line-height: 1.5;
+        }
+        
+        .detail-item::before {
+            content: "✓";
+            color: #10b981;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .highlight {
+            background: #fef3c7;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border-left: 4px solid #f59e0b;
+        }
+        
+        .highlight-title {
+            font-weight: 600;
+            color: #92400e;
+            margin-bottom: 5px;
+        }
+        
+        .highlight-text {
+            color: #78350f;
+            font-size: 0.95rem;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .properties-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .property-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Alternative Investment Opportunities</h1>
+            <p>Premium Properties in Sri Lanka</p>
+        </div>
+        
+        <div class="properties-grid">
+            <!-- Property 1: Commercial Building -->
+            <div class="property-card">
+                <span class="property-type for-sale">FOR SALE</span>
+                <h2 class="property-title">Commercial Building</h2>
+                <div class="location">Marine Drive, Colombo 03</div>
+                
+                <div class="price">
+                    LKR 350 Million
+                    <span class="price-note">(Negotiable)</span>
+                </div>
+                
+                <div class="property-details">
+                    <div class="detail-item">8.25 Perch land extent</div>
+                    <div class="detail-item">8,700 sq ft total built area</div>
+                    <div class="detail-item">Ground floor + 5 floors + rooftop</div>
+                    <div class="detail-item">Each floor: 1,250 sq ft (including lift & toilet space)</div>
+                    <div class="detail-item">Foundation strong enough for 9 floors</div>
+                    <div class="detail-item">10 parking spots available</div>
+                    <div class="detail-item">2 washrooms per floor</div>
+                    <div class="detail-item">Mitsubishi 9-passenger lift fitted</div>
+                    <div class="detail-item">Bathrooms completed</div>
+                    <div class="detail-item">Some electrical & plumbing completed</div>
+                </div>
+                
+                <div class="highlight">
+                    <div class="highlight-title">Investment Note</div>
+                    <div class="highlight-text">Structure complete. Only floor tiling and glass-work remaining. Prime location facing Marine Drive.</div>
+                </div>
+            </div>
+            
+            <!-- Property 2: Villa -->
+            <div class="property-card">
+                <span class="property-type for-sale">FOR SALE</span>
+                <h2 class="property-title">Beautiful Villa</h2>
+                <div class="location">Tissamaharama</div>
+                
+                <div class="price">
+                    LKR 85 Million
+                    <span class="price-note">(Open to negotiation)</span>
+                </div>
+                
+                <div class="property-details">
+                    <div class="detail-item">Will be sold to the highest reasonable offer</div>
+                    <div class="detail-item">Recent bank evaluation completed</div>
+                    <div class="detail-item">Bank valuation available for serious buyers</div>
+                </div>
+                
+                <div class="highlight">
+                    <div class="highlight-title">Investment Note</div>
+                    <div class="highlight-text">Prime villa property in Tissamaharama with recent bank valuation. Excellent opportunity for tourism or residential investment.</div>
+                </div>
+            </div>
+            
+            <!-- Property 3: Office Space -->
+            <div class="property-card">
+                <span class="property-type for-rent">FOR RENT</span>
+                <h2 class="property-title">Prime Office Space</h2>
+                <div class="location">Flower Road, Colombo 07</div>
+                
+                <div class="price">
+                    LKR 500,000
+                    <span class="price-note">/month</span>
+                </div>
+                
+                <div class="property-details">
+                    <div class="detail-item">Ground floor location</div>
+                    <div class="detail-item">1,880 sq ft total area</div>
+                    <div class="detail-item">Road/showroom frontage</div>
+                    <div class="detail-item">Prime Colombo 07 location</div>
+                    <div class="detail-item">Ideal for retail or office use</div>
+                </div>
+                
+                <div class="highlight">
+                    <div class="highlight-title">Investment Note</div>
+                    <div class="highlight-text">Premium ground floor commercial space with excellent street visibility on Flower Road. Perfect for high-end retail or corporate office.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Investment Portfolio • November 2025</p>
+        </div>
+    </div>
+</body>
+</html>
