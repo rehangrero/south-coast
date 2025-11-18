@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unawatuna Villa Investment Opportunity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0a4d68 0%, #05668d 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,170.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            opacity: 0.95;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5em;
+            color: #ffd700;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        
+        /* Property Highlights */
+        .highlights {
+            background: white;
+            padding: 60px 20px;
+            margin-top: -30px;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .highlight-card {
+            background: linear-gradient(135deg, #f6f9fc 0%, #ffffff 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 4px solid #0a4d68;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .highlight-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-card h3 {
+            color: #0a4d68;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .highlight-card p {
+            color: #5a6c7d;
+            font-size: 0.95em;
+        }
+        
+        /* Investment Options */
+        .investment-options {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0a4d68;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #5a6c7d;
+            margin-bottom: 50px;
+        }
+        
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .option-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border-top: 5px solid #0a4d68;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+        }
+        
+        .option-card.featured {
+            border-top-color: #ffd700;
+            position: relative;
+        }
+        
+        .featured-badge {
+            position: absolute;
+            top: -15px;
+            right: 30px;
+            background: #ffd700;
+            color: #0a4d68;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 0.9em;
+        }
+        
+        .option-title {
+            font-size: 2em;
+            color: #0a4d68;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .option-price {
+            font-size: 2.5em;
+            color: #05668d;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .option-period {
+            font-size: 1.1em;
+            color: #5a6c7d;
+            margin-bottom: 30px;
+        }
+        
+        .option-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .option-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e8ecef;
+            display: flex;
+            align-items: center;
+        }
+        
+        .option-features li:before {
+            content: '✓';
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-right: 15px;
+        }
+        
+        /* Revenue Potential */
+        .revenue-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #0a4d68 0%, #05668d 100%);
+            color: white;
+        }
+        
+        .revenue-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .revenue-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 35px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: background 0.3s;
+        }
+        
+        .revenue-card:hover {
+            background: rgba(255,255,255,0.15);
+        }
+        
+        .revenue-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+        
+        .revenue-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .revenue-detail {
+            font-size: 1em;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+        
+        /* Features Section */
+        .features-section {
+            padding: 80px 20px;
+            background: white;
+        }
+        
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+        
+        .feature-item:hover {
+            background: #e8f4f8;
+        }
+        
+        .feature-icon {
+            font-size: 2em;
+            margin-right: 15px;
+            color: #0a4d68;
+        }
+        
+        .feature-content h4 {
+            color: #0a4d68;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        
+        .feature-content p {
+            color: #5a6c7d;
+            font-size: 0.95em;
+        }
+        
+        /* Location Section */
+        .location-section {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+        
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .location-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .location-card .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .location-card h4 {
+            color: #0a4d68;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .location-card p {
+            color: #5a6c7d;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #0a4d68 0%, #05668d 100%);
+            text-align: center;
+            color: white;
+        }
+        
+        .cta-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #0a4d68;
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2em;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a2332;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        footer p {
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            
+            .hero p {
+                font-size: 1.1em;
+            }
+            
+            .section-title {
+                font-size: 2em;
+            }
+            
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .option-price {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content container">
+            <h1>Unawatuna Riverfront Villa</h1>
+            <p>Brand New Luxury Property | Heenatigala Road</p>
+            <p>8-Bedroom Wellness & Hospitality Investment</p>
+            <div class="hero-subtitle">Prime South Coast Location | Turnkey Operation</div>
+        </div>
+    </div>
+
+    <!-- Property Highlights -->
+    <div class="highlights">
+        <div class="container">
+            <h2 class="section-title">Investment Highlights</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏨</div>
+                    <h3>8 Bedroom Suites</h3>
+                    <p>All AC rooms with attached bathrooms, hot water. Most are triple-occupancy capable.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏊</div>
+                    <h3>Premium Amenities</h3>
+                    <p>33x12 ft pool, outdoor bar, yoga hall, commercial kitchen, sun beds.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🌊</div>
+                    <h3>River Access</h3>
+                    <p>Private deck by the river. 2.5km to Unawatuna, Jungle & Dewata beaches.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🧘</div>
+                    <h3>Wellness Ready</h3>
+                    <p>Dedicated yoga/multipurpose hall perfect for retreats and training programs.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">⚡</div>
+                    <h3>Full Infrastructure</h3>
+                    <p>Fiber WiFi, backup generator, CCTV, parking for 5 vehicles, staff quarters.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">✨</div>
+                    <h3>Brand New</h3>
+                    <p>Freshly completed property, turnkey ready with caretaker included.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Investment Options -->
+    <div class="investment-options">
+        <div class="container">
+            <h2 class="section-title">Investment Options</h2>
+            <p class="section-subtitle">Choose the structure that fits your investment strategy</p>
+            
+            <div class="options-grid">
+                <!-- Option 1: Leasehold -->
+                <div class="option-card featured">
+                    <span class="featured-badge">TRANSFERABLE</span>
+                    <div class="option-title">Leasehold</div>
+                    <div class="option-price">$400,000</div>
+                    <div class="option-period">25 Years | Transferable Rights</div>
+                    <ul class="option-features">
+                        <li>Full operational control</li>
+                        <li>Transferable leasehold rights</li>
+                        <li>Long-term value appreciation</li>
+                        <li>Flexible exit strategy</li>
+                        <li>No monthly payments</li>
+                        <li>Full revenue retention</li>
+                        <li>Asset-backed investment</li>
+                    </ul>
+                </div>
+
+                <!-- Option 2: Monthly Rent -->
+                <div class="option-card">
+                    <div class="option-title">Monthly Rental</div>
+                    <div class="option-price">$4,000/mo</div>
+                    <div class="option-period">10 Year Agreement</div>
+                    <ul class="option-features">
+                        <li>Lower initial capital required</li>
+                        <li>Immediate operational start</li>
+                        <li>Caretaker included</li>
+                        <li>Predictable monthly costs</li>
+                        <li>Maintenance managed</li>
+                        <li>Test market with flexibility</li>
+                        <li>Total: $480k over 10 years</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Revenue Potential -->
+    <div class="revenue-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Revenue Potential</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Multiple income streams year-round</p>
+            
+            <div class="revenue-grid">
+                <div class="revenue-card">
+                    <h3>Accommodation</h3>
+                    <div class="revenue-number">8 Rooms</div>
+                    <p class="revenue-detail">Most triple-occupancy capable. Peak season: $80-150/room/night. Off-season: $50-80/room/night.</p>
+                </div>
+                
+                <div class="revenue-card">
+                    <h3>Wellness Retreats</h3>
+                    <div class="revenue-number">Year-Round</div>
+                    <p class="revenue-detail">Yoga hall for retreats, training programs, workshops. Off-season targeting wellness tourists at premium rates.</p>
+                </div>
+                
+                <div class="revenue-card">
+                    <h3>Hospitality Services</h3>
+                    <div class="revenue-number">Multiple</div>
+                    <p class="revenue-detail">Outdoor bar, commercial kitchen, pool area. Additional revenue from F&B and event hosting.</p>
+                </div>
+                
+                <div class="revenue-card">
+                    <h3>Estimated Annual</h3>
+                    <div class="revenue-number">$150k+</div>
+                    <p class="revenue-detail">Conservative estimate at 60% occupancy. Peak season premium rates plus off-season wellness programs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section">
+        <div class="container">
+            <h2 class="section-title">Complete Facility Specification</h2>
+            
+            <div class="features-container">
+                <div class="feature-item">
+                    <div class="feature-icon">🛏️</div>
+                    <div class="feature-content">
+                        <h4>Accommodations</h4>
+                        <p>8 bedrooms, all AC, attached bathrooms, hot water systems</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🍽️</div>
+                    <div class="feature-content">
+                        <h4>Dining Facilities</h4>
+                        <p>AC dining room, fully equipped commercial kitchen</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🏊</div>
+                    <div class="feature-content">
+                        <h4>Pool Area</h4>
+                        <p>33x12 feet swimming pool with sun beds</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🍹</div>
+                    <div class="feature-content">
+                        <h4>Bar & Entertainment</h4>
+                        <p>Outdoor bar area for guest services</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🧘</div>
+                    <div class="feature-content">
+                        <h4>Yoga/Multipurpose Hall</h4>
+                        <p>Dedicated space for wellness programs and events</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🌊</div>
+                    <div class="feature-content">
+                        <h4>River Access</h4>
+                        <p>Backyard deck by the river for unique guest experience</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🚗</div>
+                    <div class="feature-content">
+                        <h4>Parking</h4>
+                        <p>Secure parking for 5 vehicles</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">👥</div>
+                    <div class="feature-content">
+                        <h4>Staff Facilities</h4>
+                        <p>Dedicated staff room for 2 with caretaker included</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">📹</div>
+                    <div class="feature-content">
+                        <h4>Security</h4>
+                        <p>Complete CCTV surveillance system</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">📡</div>
+                    <div class="feature-content">
+                        <h4>Connectivity</h4>
+                        <p>High-speed Fiber Optic WiFi throughout</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-content">
+                        <h4>Power Backup</h4>
+                        <p>Full backup power generator for uninterrupted service</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <div class="feature-content">
+                        <h4>Condition</h4>
+                        <p>Brand new construction, move-in ready</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Location Section -->
+    <div class="location-section">
+        <div class="container">
+            <h2 class="section-title">Strategic Location</h2>
+            <p class="section-subtitle">Unawatuna - Sri Lanka's Premier South Coast Destination</p>
+            
+            <div class="location-grid">
+                <div class="location-card">
+                    <div class="icon">🏖️</div>
+                    <h4>Unawatuna Beach</h4>
+                    <p>2.5 km | 5 min drive<br>World-famous crescent bay</p>
+                </div>
+                
+                <div class="location-card">
+                    <div class="icon">🌴</div>
+                    <h4>Jungle Beach</h4>
+                    <p>2.5 km | 5 min drive<br>Secluded natural paradise</p>
+                </div>
+                
+                <div class="location-card">
+                    <div class="icon">🌊</div>
+                    <h4>Dewata Beach</h4>
+                    <p>2.5 km | 5 min drive<br>Pristine coastal beauty</p>
+                </div>
+                
+                <div class="location-card">
+                    <div class="icon">🏰</div>
+                    <h4>Galle Fort</h4>
+                    <p>5 km | 10 min drive<br>UNESCO World Heritage Site</p>
+                </div>
+                
+                <div class="location-card">
+                    <div class="icon">✈️</div>
+                    <h4>Airport Access</h4>
+                    <p>150 km | 2.5 hours<br>Colombo International</p>
+                </div>
+                
+                <div class="location-card">
+                    <div class="icon">🎯</div>
+                    <h4>Tourist Hub</h4>
+                    <p>Central location<br>High visitor traffic year-round</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Ready to Invest?</h2>
+            <p>Secure your position in Sri Lanka's thriving South Coast hospitality market</p>
+            <a href="#contact" class="cta-button">Request Information</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Unawatuna Riverfront Villa Investment Opportunity | Premium South Coast Real Estate</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Contact for site visits, financial projections, and detailed documentation</p>
+        </div>
+    </footer>
+</body>
+</html>
