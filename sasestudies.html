@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Studies | RJ Grero</title>
+  <meta name="description" content="Selected client engagements by RJ Grero - Strategic Property Advisory. Zoning, acquisitions, negotiation, risk control, and investment advisory in Sri Lanka." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Case Studies | RJ Grero" />
+  <meta property="og:description" content="Selected client engagements by RJ Grero - Strategic Property Advisory." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0f1a2d;
+      --panel2:#0c1729;
+      --text:#e9edf5;
+      --muted:#b4c0d6;
+      --soft:#1c2a44;
+      --line:#223454;
+      --accent:#64d2ff;
+      --accent2:#9be7ff;
+      --ok:#52ffa8;
+      --warn:#ffcf5a;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(1200px 600px at 20% 0%, rgba(100,210,255,.18), transparent 60%),
+        radial-gradient(900px 600px at 80% 20%, rgba(82,255,168,.10), transparent 60%),
+        linear-gradient(180deg, #071022 0%, var(--bg) 60%, #070d1a 100%);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding: 24px;}
+    header{
+      padding: 34px 0 18px;
+    }
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding: 14px 16px;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 999px;
+      background: rgba(15,26,45,.55);
+      backdrop-filter: blur(8px);
+      box-shadow: var(--shadow);
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width: 220px;
+    }
+    .logo{
+      width:36px;height:36px;border-radius:12px;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(155,231,255,.9), rgba(100,210,255,.25) 55%, rgba(15,26,45,.2) 70%),
+        linear-gradient(135deg, rgba(100,210,255,.35), rgba(82,255,168,.18));
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 8px 18px rgba(0,0,0,.25);
+      position:relative;
+      overflow:hidden;
+    }
+    .logo:after{
+      content:"";
+      position:absolute; inset:-40% -40%;
+      background: linear-gradient(90deg, transparent 20%, rgba(255,255,255,.18) 40%, transparent 60%);
+      transform: rotate(25deg);
+    }
+    .brand .name{
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+    .brand .tag{
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 1px;
+    }
+    nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 10px;
+      justify-content:flex-end;
+    }
+    nav a{
+      text-decoration:none;
+      font-size: 13px;
+      color: var(--muted);
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+    }
+    nav a:hover{
+      color: var(--text);
+      border-color: rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 18px;
+      margin-top: 18px;
+      align-items:stretch;
+    }
+    .heroCard{
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, rgba(15,26,45,.78), rgba(12,23,41,.62));
+      box-shadow: var(--shadow);
+      padding: 26px;
+      position:relative;
+      overflow:hidden;
+    }
+    .heroCard:before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        radial-gradient(700px 240px at 15% 10%, rgba(100,210,255,.18), transparent 60%),
+        radial-gradient(520px 240px at 70% 0%, rgba(82,255,168,.12), transparent 60%);
+      pointer-events:none;
+    }
+    .heroCard > *{position:relative}
+    h1{
+      margin: 0 0 10px;
+      font-size: clamp(26px, 3.5vw, 40px);
+      line-height: 1.1;
+      letter-spacing: -.3px;
+    }
+    .lead{
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 60ch;
+    }
+    .ctaRow{
+      display:flex;
+      gap: 10px;
+      flex-wrap:wrap;
+      margin-top: 14px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      text-decoration:none;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .btn:hover{background: rgba(255,255,255,.10)}
+    .btn.primary{
+      border-color: rgba(100,210,255,.35);
+      background: linear-gradient(135deg, rgba(100,210,255,.20), rgba(82,255,168,.12));
+    }
+    .btn.primary:hover{
+      background: linear-gradient(135deg, rgba(100,210,255,.28), rgba(82,255,168,.16));
+    }
+    .sideCard{
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, rgba(12,23,41,.70), rgba(8,16,32,.65));
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .pillRow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 10px;
+    }
+    .pill{
+      padding: 8px 10px;
+      font-size: 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.12);
+      color: var(--muted);
+      background: rgba(255,255,255,.04);
+    }
+
+    main{padding: 18px 0 60px;}
+    .sectionTitle{
+      margin: 24px 0 10px;
+      font-size: 14px;
+      color: var(--muted);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+    .case{
+      grid-column: span 12;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, rgba(15,26,45,.72), rgba(10,18,34,.68));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .caseHead{
+      padding: 18px 18px 14px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      display:flex;
+      flex-direction:column;
+      gap: 6px;
+    }
+    .kicker{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 8px;
+      align-items:center;
+    }
+    .badge{
+      font-size: 12px;
+      color: var(--muted);
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+    }
+    .badge.accent{
+      border-color: rgba(100,210,255,.30);
+      color: var(--accent2);
+      background: rgba(100,210,255,.08);
+    }
+    .caseTitle{
+      margin:0;
+      font-size: 18px;
+      letter-spacing: -.2px;
+    }
+    .caseBody{
+      padding: 16px 18px 18px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .cols{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .block{
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      padding: 14px;
+    }
+    .block h3{
+      margin:0 0 6px;
+      font-size: 13px;
+      color: var(--accent2);
+      letter-spacing: .02em;
+    }
+    .block p{margin:0; color: var(--muted); font-size: 13px;}
+    ul{
+      margin: 8px 0 0 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    li{margin: 6px 0}
+    .outcome{
+      border-left: 3px solid rgba(82,255,168,.55);
+      padding-left: 12px;
+    }
+    .footnote{
+      color: rgba(180,192,214,.85);
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    .closing{
+      margin-top: 22px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.10);
+      background: linear-gradient(135deg, rgba(100,210,255,.12), rgba(82,255,168,.08));
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .closing h2{
+      margin:0 0 6px;
+      font-size: 18px;
+    }
+    .closing p{margin:0; color: var(--muted); font-size: 14px;}
+    footer{
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding: 18px 0 28px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .footerRow{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      gap: 12px;
+      align-items:center;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero{grid-template-columns: 1fr;}
+      .cols{grid-template-columns: 1fr;}
+      .topbar{border-radius: 18px;}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="topbar">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <div class="name">RJ Grero</div>
+            <div class="tag">Strategic Property Advisory</div>
+          </div>
+        </div>
+
+        <!-- Update hrefs to match your site routes -->
+        <nav aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/#services">Services</a>
+          <a href="/case-studies.html" aria-current="page">Case Studies</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="hero">
+        <div class="heroCard">
+          <h1>Case Studies</h1>
+          <p class="lead">
+            Selected client engagements showcasing independent buyer representation, negotiation strength,
+            risk control, and disciplined investment advisory across Sri Lanka.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn primary" href="/#contact">Book a Consultation</a>
+            <a class="btn" href="mailto:rehan@rjgrero.com">rehan@rjgrero.com</a>
+            <a class="btn" href="https://www.rjgrero.com" target="_blank" rel="noopener">www.rjgrero.com</a>
+          </div>
+
+          <p class="footnote">
+            Note: Client names are omitted for confidentiality. Locations and facts reflect real-world engagement patterns and are presented
+            in a privacy-safe format.
+          </p>
+        </div>
+
+        <aside class="sideCard">
+          <div class="sectionTitle" style="margin-top:0;">Coverage</div>
+          <div class="pillRow">
+            <div class="pill">Colombo 5–7</div>
+            <div class="pill">South Coast</div>
+            <div class="pill">Diaspora Buyers</div>
+            <div class="pill">Off-Market Access</div>
+            <div class="pill">Negotiation</div>
+            <div class="pill">Due Diligence</div>
+            <div class="pill">Risk Control</div>
+          </div>
+
+          <div class="sectionTitle">What you will see here</div>
+          <div class="block">
+            <h3>Practical Outcomes</h3>
+            <p>How disciplined advisory changes price, terms, feasibility, and long-term value.</p>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <div class="sectionTitle">Selected Engagements</div>
+
+      <section class="grid" aria-label="Case studies list">
+
+        <!-- 1 -->
+        <article class="case" id="case-1">
+          <div class="caseHead">
+            <div class="kicker">
+              <span class="badge accent">Property Acquisition Advisory</span>
+              <span class="badge">Unawatuna</span>
+              <span class="badge">20+ Acres</span>
+            </div>
+            <h2 class="caseTitle">Large-Scale Land Zoning & Subdivision (Coastal Land)</h2>
+          </div>
+
+          <div class="caseBody">
+            <div class="cols">
+              <div class="block">
+                <h3>Client Objective</h3>
+                <p>
+                  An overseas investor identified a coastal land parcel exceeding 20 acres in Unawatuna with long-term
+                  development potential. The land required a clear zoning pathway and a structured subdivision strategy.
+                </p>
+              </div>
+              <div class="block">
+                <h3>Challenges</h3>
+                <ul>
+                  <li>Zoning classification misalignment</li>
+                  <li>Fragmented title structure</li>
+                  <li>Environmental and coastal regulation considerations</li>
+                  <li>Subdivision feasibility and access planning</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cols">
+              <div class="block">
+                <h3>RJ Grero’s Role</h3>
+                <ul>
+                  <li>Independent title and zoning due diligence</li>
+                  <li>Coordination with surveyors, planners, and relevant authorities</li>
+                  <li>Phased subdivision strategy and density optimization advice</li>
+                  <li>Negotiation of acquisition terms tied to regulatory milestones</li>
+                </ul>
+              </div>
+              <div class="block outcome">
+                <h3>Outcome</h3>
+                <ul>
+                  <li>Rezoning pathway established with clear milestones</li>
+                  <li>Subdivision plan progressed for phased development</li>
+                  <li>Land valuation uplift post-approval steps</li>
+                  <li>Client secured asset at pre-development pricing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="case" id="case-2">
+          <div class="caseHead">
+            <div class="kicker">
+              <span class="badge accent">Investment Property Advisory</span>
+              <span class="badge">Colombo</span>
+              <span class="badge">Owner-Occupied</span>
+            </div>
+            <h2 class="caseTitle">Strategic Residential Expansion (Securing the Neighboring Plot)</h2>
+          </div>
+
+          <div class="caseBody">
+            <div class="cols">
+              <div class="block">
+                <h3>Client Objective</h3>
+                <p>
+                  A Colombo-based family sought to expand their primary residence but lacked adequate land
+                  for redevelopment. The best solution was acquiring the adjacent plot discreetly.
+                </p>
+              </div>
+              <div class="block">
+                <h3>Challenges</h3>
+                <ul>
+                  <li>Adjacent property not publicly listed (off-market)</li>
+                  <li>Informal interest from other potential buyers</li>
+                  <li>Sensitive neighbor-to-neighbor negotiation dynamics</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cols">
+              <div class="block">
+                <h3>RJ Grero’s Role</h3>
+                <ul>
+                  <li>Discreet outreach and off-market approach</li>
+                  <li>Comparable land-rate assessment and value anchoring</li>
+                  <li>Confidential negotiation structure and timeline management</li>
+                  <li>Transaction oversight with conveyancing coordination</li>
+                </ul>
+              </div>
+              <div class="block outcome">
+                <h3>Outcome</h3>
+                <ul>
+                  <li>Neighboring plot secured without public competition</li>
+                  <li>Expanded landholding, improving redevelopment feasibility</li>
+                  <li>Long-term capital value strengthened through consolidation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="case" id="case-3">
+          <div class="caseHead">
+            <div class="kicker">
+              <span class="badge accent">Apartment Acquisition Advisory</span>
+              <span class="badge">Colombo</span>
+              <span class="badge">Diaspora Buyer</span>
+            </div>
+            <h2 class="caseTitle">Yield-Focused Apartment Acquisition (Pricing Gap Identification)</h2>
+          </div>
+
+          <div class="caseBody">
+            <div class="cols">
+              <div class="block">
+                <h3>Client Objective</h3>
+                <p>
+                  A diaspora investor wanted a sea-view 2-bedroom apartment within a disciplined budget,
+                  prioritizing long-term liquidity and defensible pricing per square foot.
+                </p>
+              </div>
+              <div class="block">
+                <h3>Challenges</h3>
+                <ul>
+                  <li>Overpriced units in an oversupplied segment</li>
+                  <li>Developer discount opacity and inconsistent incentives</li>
+                  <li>Asking prices not aligned to comparable benchmarks</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cols">
+              <div class="block">
+                <h3>RJ Grero’s Role</h3>
+                <ul>
+                  <li>Per-square-foot benchmarking and comparable tower analysis</li>
+                  <li>Identification of internal pricing inconsistencies</li>
+                  <li>Negotiation to close at below-market psf</li>
+                  <li>Rental yield and exit-liquidity suitability review</li>
+                </ul>
+              </div>
+              <div class="block outcome">
+                <h3>Outcome</h3>
+                <ul>
+                  <li>Unit secured below market-average psf</li>
+                  <li>Improved yield outlook and reduced downside exposure</li>
+                  <li>Capital preserved for broader portfolio allocation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="case" id="case-4">
+          <div class="caseHead">
+            <div class="kicker">
+              <span class="badge accent">Holiday Home & Second Residence Advisory</span>
+              <span class="badge">South Coast</span>
+              <span class="badge">Dual-Use</span>
+            </div>
+            <h2 class="caseTitle">Coastal Holiday Home (Lifestyle + Income Strategy)</h2>
+          </div>
+
+          <div class="caseBody">
+            <div class="cols">
+              <div class="block">
+                <h3>Client Objective</h3>
+                <p>
+                  Acquire a holiday home that supports personal use while generating short-term rental income
+                  during peak periods, without overpaying at the top of the cycle.
+                </p>
+              </div>
+              <div class="block">
+                <h3>Challenges</h3>
+                <ul>
+                  <li>Tourism-driven price volatility and seasonality</li>
+                  <li>Short-term rental compliance and operational readiness</li>
+                  <li>Maintenance cost planning and management setup</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cols">
+              <div class="block">
+                <h3>RJ Grero’s Role</h3>
+                <ul>
+                  <li>Micro-location selection based on demand drivers</li>
+                  <li>Income assumptions review (occupancy and rate realism)</li>
+                  <li>Inspection coordination and compliance checks</li>
+                  <li>Acquisition timing strategy to avoid peak pricing</li>
+                </ul>
+              </div>
+              <div class="block outcome">
+                <h3>Outcome</h3>
+                <ul>
+                  <li>Lifestyle objectives met without sacrificing ROI</li>
+                  <li>Strong seasonal occupancy achieved post-acquisition</li>
+                  <li>Long-term appreciation positioned through location quality</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="case" id="case-5">
+          <div class="caseHead">
+            <div class="kicker">
+              <span class="badge accent">Negotiation & Transaction Oversight</span>
+              <span class="badge">Colombo</span>
+              <span class="badge">Client-Sourced</span>
+            </div>
+            <h2 class="caseTitle">Negotiation & Conveyancing Supervision (Price Correction Strategy)</h2>
+          </div>
+
+          <div class="caseBody">
+            <div class="cols">
+              <div class="block">
+                <h3>Client Objective</h3>
+                <p>
+                  The client sourced a property directly but required professional negotiation, deposit structuring,
+                  and oversight through to completion to reduce execution risk.
+                </p>
+              </div>
+              <div class="block">
+                <h3>Challenges</h3>
+                <ul>
+                  <li>Asking price above comparative evidence</li>
+                  <li>Seller anchoring and limited willingness to concede</li>
+                  <li>Tight timeline with documentation and payment sequencing</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cols">
+              <div class="block">
+                <h3>RJ Grero’s Role</h3>
+                <ul>
+                  <li>Independent price verification and counter-offer strategy</li>
+                  <li>Negotiation management with controlled concessions</li>
+                  <li>Deposit and milestone structuring to protect the buyer</li>
+                  <li>Conveyancing and documentation oversight coordination</li>
+                </ul>
+              </div>
+              <div class="block outcome">
+                <h3>Outcome</h3>
+                <ul>
+                  <li>Meaningful price reduction achieved</li>
+                  <li>Staged payment terms reduced buyer exposure</li>
+                  <li>Improved transaction certainty and timeline control</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="case" id="case-6">
+          <div class="caseHead">
+            <div class="kicker">
+              <span class="badge accent">Risk Control</span>
+              <span class="badge">Colombo</span>
+              <span class="badge">Feasibility</span>
+            </div>
+            <h2 class="caseTitle">Development Risk Exposure (Feasibility Reassessment)</h2>
+          </div>
+
+          <div class="caseBody">
+            <div class="cols">
+              <div class="block">
+                <h3>Client Objective</h3>
+                <p>
+                  A developer planned a mid-scale residential project and needed an independent risk control
+                  review before committing to major capex and approvals.
+                </p>
+              </div>
+              <div class="block">
+                <h3>Challenges</h3>
+                <ul>
+                  <li>Unclear density and planning allowances (FAR-related assumptions)</li>
+                  <li>Infrastructure constraints affecting feasibility</li>
+                  <li>Financial model relying on optimistic absorption assumptions</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cols">
+              <div class="block">
+                <h3>RJ Grero’s Role</h3>
+                <ul>
+                  <li>Regulatory and planning risk audit</li>
+                  <li>Feasibility review with downside-scenario checks</li>
+                  <li>Identification of density and cost assumption gaps</li>
+                  <li>Advisory on resizing strategy and phased approach</li>
+                </ul>
+              </div>
+              <div class="block outcome">
+                <h3>Outcome</h3>
+                <ul>
+                  <li>Overcapitalization risk avoided</li>
+                  <li>Project scale adjusted to preserve margins</li>
+                  <li>Better alignment between approvals, cost, and absorption</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="case" id="case-7">
+          <div class="caseHead">
+            <div class="kicker">
+              <span class="badge accent">Investment Property Advisory</span>
+              <span class="badge">Colombo</span>
+              <span class="badge">Portfolio</span>
+            </div>
+            <h2 class="caseTitle">Portfolio Restructuring (Capital Reallocation for Growth)</h2>
+          </div>
+
+          <div class="caseBody">
+            <div class="cols">
+              <div class="block">
+                <h3>Client Objective</h3>
+                <p>
+                  Reallocate capital from underperforming holdings into stronger-growth Colombo corridors,
+                  improving blended yield while maintaining liquidity and resale defensibility.
+                </p>
+              </div>
+              <div class="block">
+                <h3>Challenges</h3>
+                <ul>
+                  <li>Low yields and slow growth in legacy assets</li>
+                  <li>Capital locked in illiquid micro-locations</li>
+                  <li>Timing sensitivity around market liquidity cycles</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cols">
+              <div class="block">
+                <h3>RJ Grero’s Role</h3>
+                <ul>
+                  <li>Portfolio performance review and risk/return mapping</li>
+                  <li>Identification of recycle opportunities and target corridors</li>
+                  <li>Timing strategy aligned to transaction liquidity</li>
+                  <li>Acquisition guidance for replacement asset selection</li>
+                </ul>
+              </div>
+              <div class="block outcome">
+                <h3>Outcome</h3>
+                <ul>
+                  <li>Improved blended yield and long-term appreciation outlook</li>
+                  <li>Reduced management complexity via better asset selection</li>
+                  <li>More defensible exit options through liquidity discipline</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <section class="closing" aria-label="Closing statement">
+        <h2>Acquire with clarity. Negotiate with leverage. Invest with discipline.</h2>
+        <p>
+          Each engagement reflects an independent advisory approach focused on price discipline, risk control,
+          and long-term value creation. If you are evaluating an acquisition, expansion, or investment in Sri Lanka,
+          book a consultation to structure the process correctly from day one.
+        </p>
+
+        <div class="ctaRow" style="margin-top:14px;">
+          <a class="btn primary" href="/#contact">Book a Consultation</a>
+          <a class="btn" href="mailto:rehan@rjgrero.com">rehan@rjgrero.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footerRow">
+        <div>© <span id="year"></span> RJ Grero | Strategic Property Advisory</div>
+        <div>
+          <a href="https://www.rjgrero.com" target="_blank" rel="noopener">www.rjgrero.com</a>
+          &nbsp;|&nbsp;
+          <a href="mailto:rehan@rjgrero.com">rehan@rjgrero.com</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
